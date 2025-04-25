@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nothing Tech Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #00ffcc;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #aaa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, #111, #333);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 10px 25px;
+      font-size: 1rem;
+      background: #00ffcc;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background: #00ccaa;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #00ffcc;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background: #00ffcc;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .card a:hover {
+      background: #00ccaa;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nothing Tech Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Innovate. Inspire. Nothing.</h2>
+    <p>Explore cutting-edge technology with our latest gadgets.</p>
+    <button>Explore Now</button>
+  </section>
+
+  <section id="products" class="products">
+    <div class="card">
+      <img src="https://shop.mobily.com.sa/wp-content/uploads/2024/06/E-shop-phone1.png" alt="Phone">
+      <h3>Nothing Phone (1)</h3>
+      <p>AMOLED Display | Snapdragon 8 Gen 2 | 12GB RAM</p>
+      <p class="price">₹29,999</p>
+      <a href="#">Details</a>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwHNkM5H2ssNVnZZdkUknslA3Rw9iYBPZong&s" alt="Smartwatch">
+      <h3>Nothing Watch Pro 2</h3>
+      <p>1.4" AMOLED | 2-Day Battery | IP68 Rated</p>
+      <p class="price">₹14,999</p>
+      <a href="#">Details</a>
+    </div>
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71oK0nwUZML.jpg" alt="Earphones">
+      <h3>Nothing Earphones</h3>
+      <p>40mm Drivers | 15hr Battery | Noise Cancellation</p>
+      <p class="price">₹3,999</p>
+      <a href="#">Details</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at support@nothingtech.in | © 2025 Nothing Inc.</p>
+  </footer>
+
+</body>
+</html>
